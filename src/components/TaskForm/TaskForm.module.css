@@ -27,6 +27,21 @@
   border-radius: 0.5rem;
 }
 
+.taskForm > button:is(:hover, :focus-visible) {
+  background-color: var(--blue-500);
+}
+
 .taskForm > button > svg {
   font-size: 1rem;
+}
+
+@media (max-width: 25rem) {
+  .taskForm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .taskForm > button {
+    justify-content: center;
+  }
 }

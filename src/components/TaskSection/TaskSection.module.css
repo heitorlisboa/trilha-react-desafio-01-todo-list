@@ -10,10 +10,13 @@
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .header > span {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
 }
 
@@ -44,7 +47,7 @@
   display: grid;
   justify-items: center;
   gap: 1rem;
-  padding: 4rem 1.5rem;
+  padding: 4rem 0;
   border-top: 1px solid var(--gray-400);
 }
 
