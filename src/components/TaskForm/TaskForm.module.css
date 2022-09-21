@@ -1,0 +1,32 @@
+.taskForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.taskForm > input[type='text'] {
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+}
+
+.taskForm > button {
+  background-color: var(--blue-600);
+
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.taskForm > button > svg {
+  font-size: 1rem;
+}

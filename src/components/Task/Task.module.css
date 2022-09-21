@@ -1,0 +1,71 @@
+.task {
+  background-color: var(--gray-500);
+
+  font-size: 0.875rem;
+
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.5rem;
+}
+
+.task[data-complete='false'] {
+  border-color: var(--gray-400);
+}
+
+.task[data-complete='true'] {
+  border-color: transparent;
+}
+
+.toggleButton,
+.deleteButton {
+  background-color: transparent;
+  line-height: 0;
+  border: none;
+}
+
+.toggleButton {
+  padding: 0.125rem;
+}
+
+.toggleButton > svg {
+  font-size: 1.25rem;
+}
+
+.toggleButton[data-state='off'] > svg {
+  color: var(--blue-500);
+}
+
+.toggleButton[data-state='on'] > svg {
+  --checked-icon-color: var(--gray-100);
+
+  background-image: linear-gradient(
+    var(--checked-icon-color),
+    var(--checked-icon-color)
+  );
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--purple-600);
+
+  border-radius: 100vw;
+}
+
+.task del {
+  color: var(--gray-300);
+}
+
+.deleteButton {
+  color: var(--gray-300);
+  padding: 0.25rem;
+}
+
+.deleteButton:hover {
+  color: var(--danger);
+}
